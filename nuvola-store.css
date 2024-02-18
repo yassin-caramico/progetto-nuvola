@@ -1,0 +1,55 @@
+head {
+  border-bottom: 4px solid #161515; /* Aggiunge un bordo inferiore */
+  padding-bottom: 20px; /* Spazio inferiore */
+  background-color: grey;
+}
+body {
+  background-color: grey;
+}
+/* Stile per il titolo */
+h1 {
+  font-family: "Arial", sans-serif; /* Font family attraente e leggibile */
+  font-size: 40px; /* Dimensione del carattere modificata a 48px */
+  color: #000000; /* Colore del testo modificato a un arancione */
+  margin: 50px auto 0; /* Spazio sopra il titolo e centratura orizzontale */
+  width: fit-content; /* Imposta la larghezza del titolo al contenuto */
+  animation: rotate-scale-up 1.5s ease-out; /* Animazione di fade-in */
+}
+h2 {
+  text-align: left;
+  font-size: 30px;
+  margin-top: 70px;
+  text-shadow: 10px 10px 10px rgb(73, 194, 36);
+}
+.rotate-scale-up {
+  -webkit-animation: rotate-scale-up 0.65s linear both;
+  animation: rotate-scale-up 0.65s linear both;
+}
+@-webkit-keyframes rotate-scale-up {
+  0% {
+    -webkit-transform: scale(1) rotateZ(0);
+    transform: scale(1) rotateZ(0);
+  }
+  50% {
+    -webkit-transform: scale(2) rotateZ(180deg);
+    transform: scale(2) rotateZ(180deg);
+  }
+  100% {
+    -webkit-transform: scale(1) rotateZ(360deg);
+    transform: scale(1) rotateZ(360deg);
+  }
+}
+@keyframes rotate-scale-up {
+  0% {
+    -webkit-transform: scale(1) rotateZ(0);
+    transform: scale(1) rotateZ(0);
+  }
+  50% {
+    -webkit-transform: scale(2) rotateZ(180deg);
+    transform: scale(2) rotateZ(180deg);
+  }
+  100% {
+    -webkit-transform: scale(1) rotateZ(360deg);
+    transform: scale(1) rotateZ(360deg);
+  }
+}
